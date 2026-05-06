@@ -5,7 +5,7 @@
 class Keyforge < Formula
   desc "SOPS multi-key lifecycle management CLI"
   homepage "https://github.com/danpet-dev/keyforge"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   depends_on "age"
@@ -14,16 +14,16 @@ class Keyforge < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/danpet-dev/keyforge/releases/download/v0.3.0/keyforge_0.3.0_darwin_amd64.tar.gz"
-      sha256 "e85431dbd2af86bb0aae967858cbcf3993dd43449a1ca48d4bf161849a80b92e"
+      url "https://github.com/danpet-dev/keyforge/releases/download/v0.3.1/keyforge_0.3.1_darwin_amd64.tar.gz"
+      sha256 "697481df5e884f5abc32228622e3ed674a537b592b3a3d4570d9d120462e97f9"
 
       def install
         bin.install "keyforge"
       end
     end
     on_arm do
-      url "https://github.com/danpet-dev/keyforge/releases/download/v0.3.0/keyforge_0.3.0_darwin_arm64.tar.gz"
-      sha256 "a105ac426827af3d1d79e4dbdd3d06085b9d20f912baaf0f96e48347d99083e2"
+      url "https://github.com/danpet-dev/keyforge/releases/download/v0.3.1/keyforge_0.3.1_darwin_arm64.tar.gz"
+      sha256 "7276ebca903f13dae3a399336a3e45bc8feeecdb50d47a6e7b8bd8456f5df497"
 
       def install
         bin.install "keyforge"
@@ -34,8 +34,8 @@ class Keyforge < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/danpet-dev/keyforge/releases/download/v0.3.0/keyforge_0.3.0_linux_amd64.tar.gz"
-        sha256 "7b2c82dc30f30df461dc9d2e6663ec4009379515abbf3d5ef49677a8ea8d58fb"
+        url "https://github.com/danpet-dev/keyforge/releases/download/v0.3.1/keyforge_0.3.1_linux_amd64.tar.gz"
+        sha256 "ebb2075579684b46ce34b0ebc2945a6fece9e988aab6f07796657c198c977414"
 
         def install
           bin.install "keyforge"
@@ -44,8 +44,8 @@ class Keyforge < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/danpet-dev/keyforge/releases/download/v0.3.0/keyforge_0.3.0_linux_arm64.tar.gz"
-        sha256 "033bae443833ed2b7c11facc733f705f132f775b785f8b8bf0de569ccc51ab57"
+        url "https://github.com/danpet-dev/keyforge/releases/download/v0.3.1/keyforge_0.3.1_linux_arm64.tar.gz"
+        sha256 "b8e7644549075a2d3c263d504fc6140e8f1075b909d973433f443d228dfb11cd"
 
         def install
           bin.install "keyforge"
